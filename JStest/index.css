@@ -1,0 +1,188 @@
+h1 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.card-component {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.student {
+    width: 400px;
+    height: auto;
+    background-color: red;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #f7635c, #fa4362);
+    text-align: center;
+    padding: 60px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 20px 10px;
+    position: relative;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.student:hover {
+    transform: scale(1.05);
+  }
+
+.close-student-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close-student-button:hover {
+    color: #403d3d;
+}
+
+.student-photo {
+    border-radius: 30%;
+    width: 82px;
+    height: 82px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 10px;
+    color:#e3dada;
+    margin: 0;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.container {
+    margin: 0 40px 15px;
+    text-align: left;
+}
+
+.student-overall-status {
+    display: flex;
+    justify-content: space-around;
+    background-color: #403d3d;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10%;
+}
+
+.student-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-id {
+    background-color: #fa4362;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #e3dada;
+    border-radius: 20px;
+    font-weight: 500;
+    width: 20%;
+    margin: 10px auto;
+}
+
+.about-me-description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 20px;
+    height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    cursor: pointer;
+}
+
+.about-me-description:hover {
+    color: #e3dada;
+}
+
+
+.showMore {
+    overflow: visible;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.current-course {
+    background-color: #403d3d;
+    padding: 10px ;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.current-course .arrow {
+    width: 8px;
+    height: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.current-course .arrow:hover {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.rotate-arrow {
+    transform: rotate(90deg);
+    transition: transform 0.25s ease;
+}
+
+.current-course .red-circle {
+    height: 50px;
+    width: 50px;
+}
+
+.current-course-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.current-course-title div:first-child {
+    display: flex;
+    align-items: center;
+}
+.current-course-title h4 {
+    margin: 0;
+}
+
+.hide-course-details {
+    display: none;
+}
+
+.current-course .show-course-details {
+    display: block;
+}
+
+
+.student-photos {
+    display: grid;
+}
+
+.student-photos img:first-child {
+    width: 150px;
+    height: 150px;
+}
+
+.student-photos img:nth-child(2) {
+    width: 150px;
+    height: 75px;
+}
+
+.student-photos img:nth-child(n+3) {
+    width: 75px;
+    height: 75px;
+}
