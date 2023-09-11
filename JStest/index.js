@@ -16,7 +16,7 @@
               <div class="student student-${i}">
                 <div>
                 <span class="close-student-button">X</span>
-                <img class="student-photo" src="${eachStudent?.avatar}" >
+                <img class="student-photo" src="${eachStudent?.avatar === `https://i.pravatar.cc/200` ? `https://picsum.photos/id/10${i}/200` : "https://i.pravatar.cc/200" }" >
                     <h1 class="student-name"> ${eachStudent?.name} </h1>
                     <p class="student-title uppercase">${eachStudent?.title}</p>
                     <p class="student-id">ID: ${eachStudent?.student_id}</p>
